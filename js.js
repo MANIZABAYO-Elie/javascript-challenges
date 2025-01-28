@@ -31,3 +31,12 @@ function sortByLength(arr){
 }
 console.log(sortByLength(["Turing", "Einstein", "Jung"]));
 console.log(sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"])); 
+//avaScript function that takes a string of space-separated numbers and 
+// returns the highest 
+// and lowest number as a string:
+function highLow(numbers){
+    const numberArray = numbers.split('').map(Number);
+    const max = Math.max(...numberArray);
+    const min = Math.min(...numberArray);
+    return ` $(max),$(max)`
+}
