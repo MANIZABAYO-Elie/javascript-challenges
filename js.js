@@ -86,8 +86,19 @@ console.log(getMinAndMax(arr2));
 // arrays ,Return only numbers in the years array greater than 1950.
 const years = [1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020]
 
-function getYears(years) {
-  
-    return years.filter(year=>year>1950)
-}
- console.log(getYears(years));  
+// function getYears(years) {
+//     return years.filter(year=>year>195)
+// }
+//  console.log(getYears(years));
+ function getYears(years){
+    const result = []
+    for (let i= 0; i< years.length; i++) {
+        if (years[i]>1950) {
+            result.push(years[i])
+            
+        }
+       
+    }
+    return result;
+ }
+console.log(getYears(years));
