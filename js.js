@@ -69,3 +69,14 @@ function getSquare(n){
 
 }
 console.log(getSquare(9));
+//Create a function that takes an array of numbers 
+// and return both the minimum and maximum numbers, in that order.
+
+const arr = [12,14,17,20,21,22]
+function getMinAndMax(arr){
+    //getting min and max
+    min = Math.min(...arr)
+    max = Math.max(...arr)
+    return  `${min},${max}`
+}
+console.log(getMinAndMax(arr));
