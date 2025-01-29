@@ -34,9 +34,38 @@ console.log(sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"]));
 //avaScript function that takes a string of space-separated numbers and 
 // returns the highest 
 // and lowest number as a string:
-function highLow(numbers){
-    const numberArray = numbers.split('').map(Number);
-    const max = Math.max(...numberArray);
-    const min = Math.min(...numberArray);
-    return ` $(max),$(max)`
+// function highLow(numbers){
+function highLowNum(numbers){
+    // convert input string into an array of numbers
+    numArray = numbers.split('').map(Number);
+    // find the highest and lowest numbers
+    const max= Math.max(...numArray) ;
+    const min = Math.min(...numArray)
+    //return result as string
+    return `${max} ${min}`
 }
+
+console.log(highLowNum("1 2 3 4 5"));
+// function highLow(numbers) {
+//     // Convert the input string into an array of numbers
+//     const numArray = numbers.split(' ').map(Number);
+  
+//     // Find the highest and lowest numbers
+//     const max = Math.max(...numArray);
+//     const min = Math.min(...numArray);
+  
+//     // Return the result as a string
+//     return `${max} ${min}`;
+//   }
+  
+//   // Examples
+//   console.log(highLow("1 2 3 4 5"));    // "5 1"
+//   console.log(highLow("1 2 -3 4 5"));   // "5 -3"
+//   console.log(highLow("1 9 3 4 -5"));   // "9 -5"
+//   console.log(highLow("13"));           // "13 13"
+
+function getSquare(n){
+    return n*n
+
+}
+console.log(getSquare(9));
