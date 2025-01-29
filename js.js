@@ -72,11 +72,22 @@ console.log(getSquare(9));
 //Create a function that takes an array of numbers 
 // and return both the minimum and maximum numbers, in that order.
 
-const arr = [12,14,17,20,21,22]
+const arr1 = [12,14,17,20,21,22]
+const arr2= [1]
 function getMinAndMax(arr){
     //getting min and max
     min = Math.min(...arr)
     max = Math.max(...arr)
     return  `${min},${max}`
 }
-console.log(getMinAndMax(arr));
+console.log(getMinAndMax(arr1));
+console.log(getMinAndMax(arr2));
+
+// arrays ,Return only numbers in the years array greater than 1950.
+const years = [1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020]
+
+function getYears(years) {
+  
+    return years.filter(year=>year>1950)
+}
+ console.log(getYears(years));  
