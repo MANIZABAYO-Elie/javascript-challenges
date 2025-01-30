@@ -102,3 +102,9 @@ const years = [1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020]
     return result;
  }
 console.log(getYears(years));
+
+function areaOfSquare(side){
+    return side*side;
+
+}
+console.log('area of sphere is ',areaOfSquare(10));
