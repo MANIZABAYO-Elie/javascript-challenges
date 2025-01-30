@@ -108,3 +108,13 @@ function areaOfSquare(side){
 
 }
 console.log('area of sphere is ',areaOfSquare(10));
+function calculatePerimeter(l,num){
+    if(l==="s"){
+        return 4*num;
+    }else if(l==="c"){
+        return 6.28*num
+    }
+
+    }
+    console.log(calculatePerimeter('s', 5));
+    console.log(calculatePerimeter('c', 5));
