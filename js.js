@@ -118,3 +118,6 @@ function calculatePerimeter(l,num){
     }
     console.log(calculatePerimeter('s', 5));
     console.log(calculatePerimeter('c', 5));
+    console.log(calculatePerimeter('c', 10));
+    
+
