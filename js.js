@@ -136,9 +136,9 @@ console.log(calculateAge(100));
 function displayDigit(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (String(arr[i]).includes("7")) {
-      return "Boom"; 
+      return "Boom";    
     }
-  } 
+  }
   return "the no number 7 in the array";
 }
-console.log(displayDigit([1, 2, 3, 4, 5, 6, 7]));
+console.log(displayDigit([1, 2, 3, 4, 5, 6, 9]));
