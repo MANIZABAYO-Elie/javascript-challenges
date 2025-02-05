@@ -121,5 +121,10 @@ function calculatePerimeter(l,num){
     console.log(calculatePerimeter('c', 10));
     console.log(calculatePerimeter('c', 12));
 
-    
+//Create a function that takes the age in years and returns the age in days.
+
+ function calculateAge(age){
+    return age*365
+ }
+console.log(calculateAge(100));
 
