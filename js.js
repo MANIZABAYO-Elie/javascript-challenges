@@ -128,3 +128,17 @@ function calculatePerimeter(l,num){
  }
 console.log(calculateAge(100));
 
+//Create a function that takes an array of numbers and return "Boom!" 
+// if the digit 7 appears in the array. Otherwise, return "there is 
+// no 7 in the array".
+
+
+function displayDigit(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (String(arr[i]).includes("7")) {
+      return "Boom"; 
+    }
+  } 
+  return "the no number 7 in the array";
+}
+console.log(displayDigit([1, 2, 3, 4, 5, 6, 7]));
