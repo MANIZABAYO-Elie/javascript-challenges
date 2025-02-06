@@ -154,3 +154,9 @@ const flattenedArr = arrayOfArrays2.flat();
 console.log(flattenedArr);
 
 
+const primeNumbers = [2, 3, 5, 7, 11, 13];
+function  getTheLargestPrimeNumber(primeNumbers){
+ max = Math.max(...primeNumbers)
+ return `${max}`;
+}
+console.log(getTheLargestPrimeNumber(primeNumbers));
