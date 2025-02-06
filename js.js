@@ -142,3 +142,9 @@ function displayDigit(arr) {
   return "the no number 7 in the array";
 }
 console.log(displayDigit([1, 2, 3, 4, 5, 6, 9]));
+
+// flattening arrays
+const arrayOfArrays = [[1, 2], [3, 4], [5, 6]];
+const flattenedArray = arrayOfArrays.flat();
+
+console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]
