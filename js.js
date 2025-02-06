@@ -144,7 +144,13 @@ function displayDigit(arr) {
 console.log(displayDigit([1, 2, 3, 4, 5, 6, 9]));
 
 // flattening arrays
-const arrayOfArrays = [[1, 2], [3, 4], [5, 6]];
-const flattenedArray = arrayOfArrays.flat();
+const arrayOfArrays1 = [[1, 2], [3, 4], [5, 6]];
+const flattenedArray = arrayOfArrays1.flat();
 
 console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+const arrayOfArrays2 = [[1,2,9],[10,11,12],[14,15,16]]
+const flattenedArr = arrayOfArrays2.flat();
+console.log(flattenedArr);
+
+
