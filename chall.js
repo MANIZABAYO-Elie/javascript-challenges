@@ -68,3 +68,14 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
        return count;
  }
  console.log(countVowels("javascript"));
+ // you’ll write a function that takes an array of numbers as an input 
+ // and returns the largest number in that array
+ function largestNumber(arr){
+       
+       for (let i = 0; i < arr.length; i++) {
+              max = Math.max(...arr)
+              
+       }
+       return  `${max}`;
+ }
+ console.log(largestNumber([1,2,3,4,5,5,10]));
