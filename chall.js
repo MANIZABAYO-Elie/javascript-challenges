@@ -79,3 +79,18 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
        return  `${max}`;
  }
  console.log(largestNumber([1,2,3,4,5,5,10]));
+ //
+ function sayBoom(arrayNumbers){
+   for (let i = 0; i <arrayNumbers.length; i++) {
+     
+       if (String(arrayNumbers[i]).includes("3")) {
+         return "boom";
+       
+       }
+     
+   }
+     return "there is no 3 in the array";
+ }
+  
+console.log(sayBoom([1, 2, 3, 4, 5]));
+  
