@@ -46,3 +46,12 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
      return string.replace(/\s/g,"");
  }
  console.log(removeSpace("E l i e"));
+ // create  a function that Returns a Boolean if a number is divisible by 10
+ function isVisibleBy10(num){
+    if (num%10==0){
+       return true
+    }else{
+       return false;
+    }
+ }
+ console.log(isVisibleBy10(54));
