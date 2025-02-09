@@ -45,5 +45,4 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
  function removeSpace(string){
      return string.replace(/\s/g,"");
  }
- 
  console.log(removeSpace("E l i e"));
