@@ -15,3 +15,29 @@ function reversedArray(fruits){
    return  fruits.reverse();
 }
 console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
+
+//
+// function filterOutNegatives(arr) {
+//     // Use the filter method to create a new array with only positive numbers
+//     return arr.filter(function(number) {
+//         return number >= 0;
+//     });
+// }
+
+// // Example usage:
+// const inputArray = [1, -2, 3, -4, 5, -6];
+// const filteredArray = filterOutNegatives(inputArray);
+// console.log(filteredArray); // Output: [1, 3, 5]
+
+// function that filters an array and return only positive numbers
+ function filterNegativeNumbers(arrNumbers){
+       let filteredArr = [];
+       for (let i = 0; i <arrNumbers.length; i++) {
+             if(arrNumbers[i]>=0){
+               filteredArr.push(arrNumbers[i])
+             }
+              
+       }
+       return filteredArr
+ }
+ console.log(filterNegativeNumbers([1, -2, 3, -4, 5, -6]));
