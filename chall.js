@@ -10,6 +10,8 @@ function addNumbers(numbers) {
 }
 console.log(addNumbers());
 
-const fruits =['Mangoes','Oranges','Bananas']
-reversedFruits = fruits.reverse();
-console.log(reversedFruits);
+
+function reversedArray(fruits){
+   return  fruits.reverse();
+}
+console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
