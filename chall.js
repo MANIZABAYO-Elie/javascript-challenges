@@ -41,3 +41,9 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
        return filteredArr
  }
  console.log(filterNegativeNumbers([1, -2, 3, -4, 5, -6]));
+ // Remove the spaces found in a string
+ function removeSpace(string){
+     return string.replace(/\s/g,"");
+ }
+ 
+ console.log(removeSpace("E l i e"));
