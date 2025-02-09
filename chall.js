@@ -55,3 +55,16 @@ console.log(reversedArray(["Mangoes", "Oranges", "Bananas"]));
     }
  }
  console.log(isVisibleBy10(54));
+ //create a function that’ll return an integer of the number of vowels
+ //  found in a string.
+ function countVowels(str){
+       const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+       let count =0;
+       for(char of str){
+              if(vowels.includes(char)){
+                     count++;
+              }
+       }
+       return count;
+ }
+ console.log(countVowels("javascript"));
