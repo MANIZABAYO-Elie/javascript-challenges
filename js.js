@@ -165,7 +165,7 @@ console.log(getTheLargestPrimeNumber(primeNumbers));
 function removeDuplicates(arr) {
     const uniqueArray = [];
     for (let i = 0; i < arr.length; i++) {
-        if (uniqueArray.includes(arr[i])) {
+        if (!uniqueArray.includes(arr[i])) {
             uniqueArray.push(arr[i]);
         }
     }
@@ -174,3 +174,21 @@ function removeDuplicates(arr) {
 const array = [1, 2, 2, 3, 4, 4, 5];
 const uniqueArray = removeDuplicates(array);
 console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+const arr = [1,2,3,4,5,5,5];
+const newArr = [...new set(arr)];
+console.log(newArr);
+
+// calculate sum of numbers with in array
+
+
+function Add(numbers){
+    const arr12 = [12, 14, -4, -20, 17, 18, 19.5];
+    let sum =0;
+    for (let i= 0; i<arrayNum.length; i++) {
+        sum += arrayNum[i];
+        
+    }
+    return sum;
+}
+console.log(Add());
