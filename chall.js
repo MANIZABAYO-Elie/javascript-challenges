@@ -107,3 +107,15 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return count;
   }
   console.log(countTrueValues(["true", "true", "true", "false", "true"]));
+  // Create a function that converts Celsius to Fahrenheit and vice versa.
+ 
+  function convertTemperature(temp,unit){
+    if(unit==='C'){
+       return (temp-32)*5/9;
+    }else if(unit==="F"){
+       return (temp* 9/ 5)+32
+    }else{
+       return "enter a valid unit"
+    }
+  }
+  console.log(convertTemperature(100,'C'));
