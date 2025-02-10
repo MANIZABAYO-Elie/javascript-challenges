@@ -126,3 +126,10 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return R1+R2+R3;
   }
   console.log(seriesResistance(3,4,2));
+  //Create a  javascript function that takes an array of non-negative integers and strings and 
+  // return a new array without the strings.
+
+  function filterOutStrings(arr){
+       return arr.filter(element=> typeof element !=="string")
+  }
+  console.log(filterOutStrings( [1,'apple',2,'banana',3,'cherry',4]));
