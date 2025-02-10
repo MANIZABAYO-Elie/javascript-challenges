@@ -120,3 +120,9 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
   }
   console.log(convertTemperature(100,'C'));
   console.log(convertTemperature(212, "f"));
+
+  //
+  function seriesResistance(R1,R2,R3){
+       return R1+R2+R3;
+  }
+  console.log(seriesResistance(3,4,2));
