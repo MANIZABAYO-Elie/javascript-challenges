@@ -140,3 +140,16 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
    }
    console.log(calculateSquare(7));
    console.log(calculateSquare(10));
+
+   //Create a function that takes two numbers 
+   // as arguments (num, length) and returns an array 
+   // of multiples of num until the array length reaches length.
+
+   function getMultiples(num,length){
+       let multiples = []
+       for (let i=1 ; i<=length ; i++) {
+            multiples.push(num*i);       
+       }
+       return multiples;
+   }
+   console.log(getMultiples(7,5));
