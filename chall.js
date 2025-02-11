@@ -133,3 +133,10 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return arr.filter(element=> typeof element !=="string")
   }
   console.log(filterOutStrings( [1,'apple',2,'banana',3,'cherry',4]));
+  //Create a function that calculates the number of 
+  // different squares in an n * n square grid.
+  function calculateSquare(n){
+       return n*n ;
+   }
+   console.log(calculateSquare(7));
+   console.log(calculateSquare(10));
