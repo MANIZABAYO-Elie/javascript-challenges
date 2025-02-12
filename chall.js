@@ -153,3 +153,8 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return multiples;
    }
    console.log(getMultiples(7,5));
+
+   function add(number){
+       return (number*(number+1))/2
+   }
+   console.log(add(4));
