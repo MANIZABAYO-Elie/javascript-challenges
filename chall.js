@@ -158,3 +158,17 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return (number*(number+1))/2
    }
    console.log(add(4));
+   ///You get an array of numbers, return the sum of
+   // all of the positives ones.
+
+   function arrayPostiveNumbers(arr){
+       positiveNum = [];
+       for (let i = 0; i <arr.length; i++) {
+            if(arr[i]>=0){
+              positiveNum.push(arr[i]);
+            }
+              
+       }
+       return positiveNum;
+   }
+   console.log(arrayPostiveNumbers([12,-6,-7,13,14,15]));
