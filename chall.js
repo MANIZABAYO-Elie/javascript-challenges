@@ -172,3 +172,23 @@ console.log(sayBoom([1, 2, 3, 4, 5]));
        return positiveNum;
    }
    console.log(arrayPostiveNumbers([12,-6,-7,13,14,15]));
+   //
+
+   function generateHashtag(str) {
+    // Check if the input is empty or the resulting hashtag would be too long
+    if (!str || str.trim().length === 0) {
+        return false;
+    }
+
+    // Split the string into words, capitalize the first letter of each word, and join them
+    const hashtag = '#' + str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join('');
+
+    // Check if the final hashtag is longer than 140 characters
+    if (hashtag.length > 140) {
+        return false;
+    }
+
+    return hashtag;
