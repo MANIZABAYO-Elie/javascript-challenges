@@ -201,6 +201,7 @@ console.log(generateHashtag(" ".repeat(141))); // Output: false
 console.log(generateHashtag("this is a very long string that should not be converted into a hashtag because it exceeds the character limit of one hundred and forty characters")); // Output: false
 
 //
-function name(params) {
-       
-}
+const myArray = ["I", "love", "chocolate", "frogs"];
+const madeAString = myArray.join(" ");
+console.log(madeAString);
+console.log(myArray);
