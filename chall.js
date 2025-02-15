@@ -205,3 +205,8 @@ const myArray = ["I", "love", "chocolate", "frogs"];
 const madeAString = myArray.join(" ");
 console.log(madeAString);
 console.log(myArray);
+
+function cubed(num) {
+  return num * num * num;
+}
+console.log(cubed(3));
