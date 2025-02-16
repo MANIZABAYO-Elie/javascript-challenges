@@ -211,6 +211,6 @@ function cubed(num) {
 }
 console.log(cubed(3));
 function getPower(x,n){
-       return x*n;
+       return x**n;
 }
-console.log(2,3);
+console.log(getPower(2,3));
