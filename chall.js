@@ -210,3 +210,7 @@ function cubed(num) {
   return num * num * num;
 }
 console.log(cubed(3));
+function getPower(x,n){
+       return x*n;
+}
+console.log(2,3);
