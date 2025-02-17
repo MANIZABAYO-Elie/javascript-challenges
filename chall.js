@@ -214,3 +214,20 @@ function getPower(x,n){
        return x**n;
 }
 console.log(getPower(2,3));
+// function that count the digits with out using a string
+
+function countDigits(num){
+  num = Math.abs.apply(num)
+  let count =0;
+  if(num===0) {
+    return 1
+    
+  }
+  //Loop to count digits
+    while (num > 0) {
+        num = Math.floor(num / 10); // Remove the last digit
+        count++; // Increment the count
+    }
+    return count;
+}
+console.log(countDigits(123456789));
