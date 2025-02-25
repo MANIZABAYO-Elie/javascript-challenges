@@ -217,13 +217,12 @@ console.log(getPower(2,3));
 // function that count the digits with out using a string
 
 function countDigits(num){
-  num = Math.abs.apply(num)
-  let count =0;
-  if(num===0) {
+ 
+  if(num===0) 
     return 1
-    
-  }
   //Loop to count digits
+   num = Math.abs.apply(num);
+   let count = 0;
     while (num > 0) {
         num = Math.floor(num / 10); // Remove the last digit
         count++; // Increment the count
@@ -231,3 +230,18 @@ function countDigits(num){
     return count;
 }
 console.log(countDigits(123456789));
+
+// javascript challenges
+
+
+function addEvenNumbers(n){
+  let  sum =0;
+  for (let i= 1; i<=n; i++) {
+    if(n%2===0){
+      sum += i
+    }
+    
+  }
+  return sum;
+}
+console.log(addEvenNumbers(6));
