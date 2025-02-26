@@ -245,3 +245,8 @@ function addEvenNumbers(n){
   return sum;
 }
 console.log(addEvenNumbers(6));
+
+function convertToUpperCase(text){
+  return text.toUpperCase()
+}
+console.log(convertToUpperCase("hello world"));
