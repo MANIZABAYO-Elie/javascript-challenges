@@ -247,6 +247,11 @@ function addEvenNumbers(n){
 console.log(addEvenNumbers(6));
 
 function convertToUpperCase(text){
-  return text.toUpperCase()
+  return text.split(',')
 }
 console.log(convertToUpperCase("hello world"));
+
+function sortArray(arry){
+  return arry.sort((a,b)=> a-b);
+}
+console.log(sortArray([1,2,3,4,7,0,6,8,11,19,17]));
