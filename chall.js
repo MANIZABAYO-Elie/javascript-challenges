@@ -254,4 +254,4 @@ console.log(convertToUpperCase("hello world"));
 function sortArray(arry){
   return arry.sort((a,b)=> a-b);
 }
-console.log(sortArray([1,2,3,4,7,0,6,8,11,19,17]));
+console.log(sortArray([1,2,3,4,7,0,6,8,-7,-1,-3,11,19,17]));
