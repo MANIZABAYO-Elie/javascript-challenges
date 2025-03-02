@@ -255,3 +255,16 @@ function sortArray(arry){
   return arry.sort((a,b)=> a-b);
 }
 console.log(sortArray([1,2,3,4,7,0,6,8,-7,-1,-3,11,19,17]));
+
+//avaScript function that checks if one of the two numbers is 100 or
+//  if their sum equals 100:
+
+function isOneOrSum100(num1, num2) {
+    // Check if either number is 100 or if their sum is 100
+    return num1 === 100 || num2 === 100 || (num1 + num2) === 100;
+}
+
+// Example usage:
+console.log(isOneOrSum100(100, 50)); // true (one of the numbers is 100)
+console.log(isOneOrSum100(50, 50));  // true (sum is 100)
+console.log(isOneOrSum100(20, 30));  // false (neither condition is met)
