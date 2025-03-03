@@ -276,3 +276,5 @@ function isEqualTo100(num1,num2){
   }
 }
 console.log(isEqualTo100(1,0));
+const  isEqual100 =(a,b) => a===100 || b===100|| a+b ===100;
+console.log(isEqual100(100,20));
