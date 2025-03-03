@@ -268,3 +268,11 @@ function isOneOrSum100(num1, num2) {
 console.log(isOneOrSum100(100, 50)); // true (one of the numbers is 100)
 console.log(isOneOrSum100(50, 50));  // true (sum is 100)
 console.log(isOneOrSum100(20, 30));  // false (neither condition is met)
+function isEqualTo100(num1,num2){
+  if(num1===100|| num2===100|| num1+num2===100){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(isEqualTo100(1,0));
