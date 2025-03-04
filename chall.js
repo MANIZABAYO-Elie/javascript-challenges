@@ -298,3 +298,9 @@ function getDate(){
   return `${year}-${month}-${day}`
 }
 console.log(getDate());
+// creating javascript that creating "New!"
+
+function addNew(str){
+  const str= "hello world"
+  string.indexOf("hello");
+}
