@@ -329,3 +329,6 @@ function createNewString(inputString){
   return NewString;
 }
 console.log(createNewString("Alexandre"));
+ const makeNewString =  (text) => 
+     text.length<3 ? text : text.slice(0,3)+ text.slice(-3);
+ console.log(makeNewString("machinery"));
