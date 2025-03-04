@@ -278,3 +278,23 @@ function isEqualTo100(num1,num2){
 console.log(isEqualTo100(1,0));
 const  isEqual100 =(a,b) => a===100 || b===100|| a+b ===100;
 console.log(isEqual100(100,20));
+
+// functions that returns the date of today
+function getTodayDate() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0"); // Ensures two-digit format
+  const day = String(today.getDate()).padStart(2, "0"); // Ensures two-digit format
+  return `${year}-${month}-${day}`;
+}
+
+console.log(getTodayDate());
+
+function getDate(){
+  const today = new Date();
+  const year= today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate() ).padStart(2, "0");
+  return `${year}-${month}-${day}`
+}
+console.log(getDate());
