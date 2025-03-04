@@ -300,7 +300,17 @@ function getDate(){
 console.log(getDate());
 // creating javascript that creating "New!"
 
-function addNew(str){
-  const str= "hello world"
-  string.indexOf("hello");
+
+
+
+function addNew(string1){
+  let firstWordIndex = string1.indexOf("New");
+  if(firstWordIndex===0){
+    return string1;
+  }else{
+    return `New ${string1}`
+  }
 }
+
+console.log(addNew("update"));
+console.log(addNew("New world"));
