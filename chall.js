@@ -314,3 +314,18 @@ function addNew(string1){
 
 console.log(addNew("update"));
 console.log(addNew("New world"));
+
+// create a jvascript function that takes first three
+//  characters and 2 last characters from a string and add them to form a new string  the string  methods must be 3 or more 
+// if not  the original string is returned
+
+function createNewString(inputString){
+  if(inputString.length<3){
+    return inputString;
+  }
+  const firstThree= inputString.substring(0,3);
+  const lastTwo= inputString.substring(inputString.length-2)                                                            
+  const NewString = firstThree+lastTwo;
+  return NewString;
+}
+console.log(createNewString("Alexandre"));
