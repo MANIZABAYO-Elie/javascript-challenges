@@ -332,3 +332,20 @@ console.log(createNewString("Alexandre"));
  const makeNewString =  (text) => 
      text.length<3 ? text : text.slice(0,3)+ text.slice(-3);
  console.log(makeNewString("machinery"));
+ //  
+ function nearestTo100(a, b) {
+    // Calculate the absolute difference between each value and 100
+    const diffA = Math.abs(a - 100);
+    const diffB = Math.abs(b - 100);
+
+    // Compare the differences and return the appropriate value
+    if (diffA < diffB) {
+        return a;
+    } else if (diffB < diffA) {
+        return b;
+    } else {
+        return "Both values are equally close to 100.";
+    }
+}
+console.log(nearestTo100(95, 105)); // Output: 95
+console.log(nearestTo100(102, 98));  // Output: 98
