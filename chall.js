@@ -349,3 +349,4 @@ console.log(createNewString("Alexandre"));
 }
 console.log(nearestTo100(95, 105)); // Output: 95
 console.log(nearestTo100(102, 98));  // Output: 98
+console.log(nearestTo100(100, 100));
