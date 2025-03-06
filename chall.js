@@ -350,3 +350,12 @@ console.log(createNewString("Alexandre"));
 console.log(nearestTo100(95, 105)); // Output: 95
 console.log(nearestTo100(102, 98));  // Output: 98
 console.log(nearestTo100(100, 100));
+
+function closestTo100(a,b){
+  if(100-a<100-b){
+    return a;
+  }else{
+    return b;
+  }
+}
+console.log(closestTo100(52,59));
