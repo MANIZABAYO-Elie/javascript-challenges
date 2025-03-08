@@ -376,13 +376,14 @@ function getEvenNumbers(arr){
 console.log(getEvenNumbers([1,2,4,5,6,7,8,9,10,11,12]));
 // write a javascript functions that returns even numbers up 
 // to a given number
-function getEvenNumbers(arr) {
-  let evenNum = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      evenNum.push(arr[i]);
-    }
-  }
-  return evenNum;
+function getEvenNumbersUpTo(maxNumber){
+      const evenNums = [];
+      for (let i = 1; i <=maxNumber; i++) {
+        if (i%2===0) {
+          evenNums.push(i)
+        }
+        
+      }
+      return evenNums;
 }
-console.log(getEvenNumbers([1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
+console.log(getEvenNumbersUpTo(9));
