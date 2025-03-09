@@ -9,3 +9,6 @@
  // **invoking function , the new excution content is created
 //   when invoking function the values of variables are passed 
 //   in function as an argument instead of being parameter
+
+
+// javascript hoisting
