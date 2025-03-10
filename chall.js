@@ -401,7 +401,7 @@ function sumOfEvenIndex(numsArr){
      sum += numsArr[i];
 
     }
-    const lastElement = numsArr.length - 1;
+    const lastElement = nums[numsArr.length-1];
     return sum * lastElement;
   }
 
