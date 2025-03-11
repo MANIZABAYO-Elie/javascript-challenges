@@ -17,3 +17,4 @@
 
 carName = "Volvo"
 console.log(carName);
+// how functions works
