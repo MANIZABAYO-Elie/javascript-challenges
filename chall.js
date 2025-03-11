@@ -408,24 +408,3 @@ function sumOfEvenIndex(numsArr){
 console.log(sumEvenIndexesAndMultiplyByLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
-function sumEvenIndexesAndMultiplyByLast(arr) {
-    // Check if the array is empty
-    if (arr.length === 0) {
-        return 0;
-    }
-
-    // Sum all integers with even indexes
-    let sum = 0;
-    for (let i = 0; i < arr.length; i += 2) {
-        sum += arr[i];
-    }
-
-    // Multiply the sum by the last element in the array
-    const lastElement = arr[arr.length - 1];
-    return sum * lastElement;
-}
-
-// Example usage:
-const sequence = [1, 2, 3, 4, 5, 6];
-const result = sumEvenIndexesAndMultiplyByLast(sequence);
-console.log(result); // Output: (1 + 3 + 5) * 6 = 54
