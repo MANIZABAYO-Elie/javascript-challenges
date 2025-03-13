@@ -405,6 +405,10 @@ function sumOfEvenIndex(numsArr){
     return sum * lastElement;
   }
 
-console.log(sumEvenIndexesAndMultiplyByLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+//console.log(sumEvenIndexesAndMultiplyByLast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
+function toCamelCase(str) {
+    return str.replace(/[-_](.)/g, (_, char) => char.toUpperCase());
+}
+console.log(toCamelCase('hello_world'));
