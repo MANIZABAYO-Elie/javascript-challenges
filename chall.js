@@ -412,3 +412,23 @@ function toCamelCase(str) {
     return str.replace(/[-_](.)/g, (_, char) => char.toUpperCase());
 }
 console.log(toCamelCase('hello_world'));
+
+function validatePassword(password) {
+    
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
+
+    
+    return regex.test(password);
+}
+
+
+const password1 = "Password1"; // Valid
+const password2 = "pass";      // Invalid (too short)
+const password3 = "password";  // Invalid (no uppercase or digit)
+const password4 = "PASSWORD1"; // Invalid (no lowercase)
+const password5 = "Pass_word1";// Invalid (contains underscore)
+
+console.log(validatePassword(password1)); // true
+console.log(validatePassword(password2)); // false
+console.log(validatePassword(password3)); // false
+console.log(validatePassword(password4)); // false
