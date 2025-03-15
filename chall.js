@@ -432,3 +432,34 @@ console.log(validatePassword(password1)); // true
 console.log(validatePassword(password2)); // false
 console.log(validatePassword(password3)); // false
 console.log(validatePassword(password4)); // false
+
+function rgbToHex(r, g, b) {
+    // Helper function to clamp the value between 0 and 255
+    function clamp(value) {
+        return Math.max(0, Math.min(255, Math.round(value)));
+    }
+
+    // Clamp the RGB values
+    r = clamp(r);
+    g = clamp(g);
+    b = clamp(b);
+
+    // Convert each RGB component to a two-digit hexadecimal string
+    const toHex = (value) => {
+        const hex = value.toString(16);
+        return hex.length === 1 ? '0' + hex : hex;
+    };
+
+    // Combine the hexadecimal values
+    const hexR = toHex(r);
+    const hexG = toHex(g);
+    const hexB = toHex(b);
+
+    // Return the concatenated result
+    return `#${hexR}${hexG}${hexB}`.toUpperCase();
+}
+
+// Example usage:
+console.log(rgbToHex(255, 99, 71)); // Output: "#FF6347"
+console.log(rgbToHex(0, 0, 0));      // Output: "#000000"
+console.log(rgbToHex(300, -10, 128)); // Output: "#FF0080"
