@@ -463,3 +463,8 @@ function rgbToHex(r, g, b) {
 console.log(rgbToHex(255, 99, 71)); // Output: "#FF6347"
 console.log(rgbToHex(0, 0, 0));      // Output: "#000000"
 console.log(rgbToHex(300, -10, 128)); // Output: "#FF0080"
+
+
+function encode(text){
+  const letters = string.split('');
+}
