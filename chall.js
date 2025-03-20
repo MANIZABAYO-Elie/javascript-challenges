@@ -466,5 +466,23 @@ console.log(rgbToHex(300, -10, 128)); // Output: "#FF0080"
 
 
 function encode(text){
-  const letters = string.split('');
+
+  return text.split('');
+  
+}
+console.log(encode("hello"));
+
+//
+function findEqualSumIndex(arr) {
+  const totalSum = arr.reduce((acc, val) => acc + val, 0);
+  let leftSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    const current = arr[i];
+    const rightSum = totalSum - leftSum - current;
+    if (leftSum === rightSum) {
+      return i;
+    }
+    leftSum += current;
+  }
+  return -1;
 }
