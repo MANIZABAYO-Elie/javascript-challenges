@@ -486,3 +486,17 @@ function findEqualSumIndex(arr) {
   }
   return -1;
 }
+
+function sortOdds(arr) {
+  // Extract and sort the odd numbers
+  const odds = arr.filter((num) => num % 2 !== 0).sort((a, b) => a - b);
+  let pointer = 0; // Pointer to track the current index in the sorted odds array
+
+  // Replace each odd number in the original array with the sorted ones
+  return arr.map((num) => {
+    if (num % 2 !== 0) {
+      return odds[pointer++];
+    }
+    return num;
+  });
+}
