@@ -500,3 +500,7 @@ function sortOdds(arr) {
     return num;
   });
 }
+function addNm(a,b){
+  return a+b;
+}
+console.log(addNm(5,19));
