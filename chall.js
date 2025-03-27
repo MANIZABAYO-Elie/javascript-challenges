@@ -510,3 +510,6 @@ function getInitials(name){
 }
 console.log(getInitials("Elie"))
 console.log(getInitials("Mohamed Salah"));
+let s = "GeeksforGeeks";
+const ans = s.split("").reverse().join("");
+console.log(ans);
