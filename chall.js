@@ -504,3 +504,9 @@ function addNm(a,b){
   return a+b;
 }
 console.log(addNm(5,19));
+
+function getInitials(name){
+  return  name.split('');
+}
+console.log(getInitials("Elie"))
+console.log(getInitials("Mohamed Salah"));
