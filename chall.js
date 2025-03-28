@@ -513,3 +513,8 @@ console.log(getInitials("Mohamed Salah"));
 let s = "GeeksforGeeks";
 const ans = s.split("").reverse().join("");
 console.log(ans);
+
+function capitaliseEachWord(word){
+  return word.split('').charAt(0).toUpperCase().join()
+}
+console.log(capitaliseEachWord("hello world"));
