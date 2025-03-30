@@ -518,3 +518,8 @@ function capitaliseEachWord(word){
   return word.split('').charAt(0).toUpperCase().join()
 }
 console.log(capitaliseEachWord("hello world"));
+function sortNames(s){
+  s ="Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+  let namesArr = s.split(';');
+  console.log(namesArr);
+}
