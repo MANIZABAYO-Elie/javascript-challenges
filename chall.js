@@ -508,18 +508,16 @@ console.log(addNm(5,19));
 function getInitials(name){
   return  name.split('');
 }
-console.log(getInitials("Elie"))
-console.log(getInitials("Mohamed Salah"));
-let s = "GeeksforGeeks";
-const ans = s.split("").reverse().join("");
-console.log(ans);
+// console.log(getInitials("Elie"))
+// console.log(getInitials("Mohamed Salah"));
+// let s = "GeeksforGeeks";
+// const ans = s.split("").reverse().join("");
+// console.log(ans);
 
-function capitaliseEachWord(word){
-  return word.split('').charAt(0).toUpperCase().join()
-}
-console.log(capitaliseEachWord("hello world"));
+
+// console.log(capitaliseEachWord("hello world"));
 function sortNames(s){
   s ="Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
-  let namesArr = s.split(';');
-  console.log(namesArr);
+  return  s.split(';');
 }
+console.log(sortNames());
