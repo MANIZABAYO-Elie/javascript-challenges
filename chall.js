@@ -521,6 +521,6 @@ function sortNames(s){
   return  s.split(';');
 }
 console.log(sortNames());
-function sortArr(){
-
+function sortArr(arr){
+  return 
 }
