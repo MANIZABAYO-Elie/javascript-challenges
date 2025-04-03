@@ -522,5 +522,5 @@ function sortNames(s){
 }
 console.log(sortNames());
 function sortArr(arr){
-  return 
+  return arr.split('')
 }
