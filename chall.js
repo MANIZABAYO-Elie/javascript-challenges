@@ -524,3 +524,6 @@ console.log(sortNames());
 function sortArr(arr){
   return arr.split('')
 }
+const diplayName = ()=>{
+  
+}
