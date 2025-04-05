@@ -1,8 +1,8 @@
-
+import profile from "./assets/Elie.JPG"
 const Card = ()=>{
     return(
         <div className="card">
-            <image></image>
+            <img src={profile} alt="profile photo"></img>
             <h2>Elie JR</h2>
             <p>Frontend developer</p>
         </div>
