@@ -5,12 +5,13 @@ const Header = ()=>{
         <h1>Welcome to online saloon</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>contact</li>
-                <li>Services</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">contact</a></li>
             </ul>
         </nav>
+        <hr/>
      </header>
    );
 
