@@ -524,6 +524,9 @@ console.log(sortNames());
 function sortArr(arr){
   return arr.split('')
 }
-const diplayName = ()=>{
-  
+const diplayName = (name)=>{
+  console.log(name);
 }
+diplayName('Elie')
+
+const games = ["Football", "Volleyball", "Tennis" , "Golf"];
