@@ -15,6 +15,11 @@
 // Hoisting is JavaScript's default behavior 
 // of moving declarations to the top.
 
-carName = "Volvo"
-console.log(carName);
+//carName = "Volvo"
+//console.log(carName);
 // how functions works
+
+function addTwoNum(a,b) {
+     return a+b;
+}
+console.log(addTwoNum(20,17))
